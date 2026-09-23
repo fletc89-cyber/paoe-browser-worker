@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PAOE Social — automated publishing for authorised social accounts</title>
+<meta name="description" content="PAOE Social, operated by PAOE (OccupyAI), manages and
+publishes content to social media accounts that have explicitly authorised it,
+through each platform's official API.">
+<style>
+ :root { color-scheme: light; }
+ body { max-width: 46rem; margin: 0 auto; padding: 2.5rem 1.25rem 4rem;
+        font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        color: #16181d; background: #fff; }
+ h1 { font-size: 2rem; line-height: 1.2; margin: 0 0 .4rem; }
+ h2 { font-size: 1.15rem; margin: 2.25rem 0 .5rem; }
+ p, li { margin: .65rem 0; }
+ ul { padding-left: 1.3rem; }
+ .meta { color: #5b6270; font-size: .95rem; margin: 0 0 1.75rem; }
+ .lead { font-size: 1.06rem; }
+ nav { margin: 2rem 0 0; padding-top: 1.25rem; border-top: 1px solid #e3e6ec; }
+ nav a { margin-right: 1.25rem; }
+ a { color: #14418a; }
+ footer { margin-top: 3rem; padding-top: 1rem; border-top: 1px solid #e3e6ec;
+           color: #5b6270; font-size: .875rem; }
+ code { background: #f2f4f8; padding: .1rem .35rem; border-radius: 4px;
+         font-size: .9em; }
+</style>
+</head>
+<body>
+<h1>PAOE Social</h1>
+<p class="meta">Operated by PAOE (OccupyAI).</p>
+
+<p class="lead">PAOE Social is an automated content publishing system. It manages
+and publishes social content on accounts that have <strong>explicitly authorised
+it</strong>, and only through each platform's official API.</p>
+
+<h2>What it does</h2>
+<ul>
+ <li>Authenticates an account holder through the platform's own consent screen
+     and acts only on accounts that grant that authorisation.</li>
+ <li>Produces original video and image content, and publishes it to the
+     authorised account.</li>
+ <li>Reads back the publication status of content it uploaded, and the
+     platform's own public view count for that content.</li>
+ <li>Stops immediately when authorisation is revoked.</li>
+</ul>
+
+<h2>What it does not do</h2>
+<ul>
+ <li>It does not read private messages, and does not access content belonging
+     to other users.</li>
+ <li>It does not act on any account that has not authorised it.</li>
+ <li>It does not buy, scrape or harvest personal data or contact lists, and it
+     does not send bulk or unsolicited messages to strangers.</li>
+ <li>It does not collect the identity of any viewer.</li>
+</ul>
+
+<h2>Platforms</h2>
+<p>Publication runs through the official APIs of YouTube, TikTok, Instagram and
+Facebook. When connected to a TikTok account, it uses TikTok's Login Kit and
+Content Posting API, and only on accounts that have completed TikTok's own
+consent flow.</p>
+
+<h2>Authorisation and revocation</h2>
+<p>Authorisation is granted by the account holder on the platform, and may be
+revoked at any time in the platform's own settings. Revoking access takes effect
+immediately: PAOE Social can no longer authenticate and stops publishing. Contact
+us at <strong>fletc89@gmail.com</strong> to ask what we hold about your account, or to
+have it deleted.</p>
+
+<nav>
+ <a href="https://telegra.ph/Terms-of-Service--PAOE-Social-09-23">Terms of Service</a>
+ <a href="https://telegra.ph/Privacy-Policy--PAOE-Social-09-23">Privacy Policy</a>
+ <a href="mailto:fletc89@gmail.com">fletc89@gmail.com</a>
+</nav>
+
+<footer>
+ <p>PAOE (OccupyAI) · PAOE Social</p>
+</footer>
+</body>
+</html>
