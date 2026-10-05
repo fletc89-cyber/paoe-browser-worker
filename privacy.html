@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang='en'><head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+<title>Privacy Policy — PAOE Social</title>
+<meta name='description' content='PAOE Social — Privacy Policy.'>
+</head><body><main style='max-width:44rem;margin:2rem auto;padding:0 1rem;font:16px/1.6 system-ui,sans-serif;color:#111'>
+<h1>Privacy Policy</h1>
+<p><strong>PAOE Social</strong> is operated by Autonomous Press LLC. Last updated: 2026-10-05.</p>
+
+<p>This policy explains what the PAOE Social TikTok integration accesses, why,
+how it is stored, who it is shared with, and how it is deleted. It describes
+only what the integration actually does.</p>
+
+<h2>1. TikTok authorization</h2>
+<p>PAOE Social connects to TikTok through TikTok's official authorization
+(OAuth 2.0). The account owner is shown TikTok's own consent screen and grants
+access there; PAOE never asks for, and never receives, a TikTok password. The
+authorization issues an access token (and a refresh token) that PAOE stores to
+act on the authorized account's behalf. Access can be revoked at any time (see
+section 6).</p>
+
+<h2>2. What TikTok data is accessed</h2>
+<p>The integration accesses only:</p>
+<ul>
+<li><strong>Basic profile information</strong> for the authorized account:
+its TikTok <code>open_id</code> (an account identifier) and its
+<code>display_name</code>. This is read from TikTok's
+<code>/v2/user/info</code> endpoint and is used to confirm which account is
+connected.</li>
+<li><strong>Video publishing</strong>: the ability to upload and publish video
+files that the operator supplies, to the authorized account itself, through
+TikTok's Content Posting API.</li>
+</ul>
+<p>The integration does <strong>not</strong> access other users' profiles or
+content, followers, direct messages, comments, or viewing analytics, and it does
+not collect personal data from any third party. No TikTok data is read for
+advertising or profiling.</p>
+
+<h2>3. Why the data is used</h2>
+<p>Basic profile information is used solely to identify and confirm the
+connected account. The publishing capability is used solely to publish the
+operator's own video content to that account. No TikTok data is used for any
+other purpose.</p>
+
+<h2>4. Storage and retention</h2>
+<p>Access and refresh tokens are stored on PAOE's own servers in an encrypted
+secret store; they are encrypted at rest and are never printed in logs. They are
+retained only while the connection is active, so that scheduled publishing can
+continue, and are replaced when TikTok issues new tokens. Basic profile
+information is retained only as long as needed to identify the connected
+account. When the authorization is revoked or the connection is removed, the
+associated tokens are deleted. No TikTok data is retained for longer than the
+connection requires.</p>
+
+<h2>5. Sharing</h2>
+<p>TikTok data is <strong>not sold, rented, or shared</strong> with third
+parties. It is not used for advertising. The only parties involved are:</p>
+<ul>
+<li><strong>TikTok</strong>, which receives the API requests needed to identify
+the account and publish videos.</li>
+<li><strong>Infrastructure providers</strong> that host PAOE's servers, which
+may process data on PAOE's behalf under its instructions.</li>
+</ul>
+<p>Data may be disclosed if required by law.</p>
+
+<h2>6. Deletion and revocation</h2>
+<p>You can revoke PAOE's access at any time from your TikTok account's
+<em>Settings &rarr; Security &amp; permissions &rarr; Manage app permissions</em>
+(or the equivalent TikTok settings screen), and remove PAOE from the list of
+connected apps. Once access is revoked, PAOE can no longer publish to the
+account and the stored tokens stop working. You may also request deletion of any
+data PAOE holds about the connection by contacting the address at the foot of
+this page; such requests are actioned promptly.</p>
+
+<h2>7. Security</h2>
+<p>Tokens are encrypted at rest and masked in logs. Access to the integration is
+restricted to the operator. Credentials are never embedded in public code.</p>
+
+<h2>8. Children</h2>
+<p>This integration is not directed at children and does not knowingly collect
+personal information from children.</p>
+
+<h2>9. Changes</h2>
+<p>This policy may be updated. The date at the top of this page shows the
+current version.</p>
+
+<h2>10. Contact</h2>
+<p>For any question about this policy, or to request deletion, contact the
+address at the foot of this page.</p>
+
+<hr>
+<p>Contact: <a href='mailto:fletc89@gmail.com'>fletc89@gmail.com</a></p>
+</main></body></html>
